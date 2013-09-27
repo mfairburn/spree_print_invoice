@@ -2,7 +2,7 @@ require 'prawn/layout'
 
 font "Helvetica"
 # need a smoother path here!
-im = File.join [Spree::Backend::Engine.root, 'app', 'assets', 'images', Spree::PrintInvoice::Config[:print_invoice_logo_path]]
+im = File.join [Rails.root, 'app', 'assets', 'images', Spree::PrintInvoice::Config[:print_invoice_logo_path]]
 
 image im , :at => [0,720] #, :scale => 0.35
 
